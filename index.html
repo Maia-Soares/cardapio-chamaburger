@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/logo-chama.svg"
+      type="image/x-icon"
+    />
+
+    <title>Chama Burger</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <header
+      class="w-full h-[420px] bg-zinc-900 bg-smoke bg-cover bg-center bg-blend-soft-light"
+    >
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/logo-chama.svg"
+          alt="Logo do chama burger"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Chama Burger</h1>
+        <a href="https://maps.app.goo.gl/3tnfmwQC7pCwsMuV7" target="_blank"
+          ><span class="text-white font-medium"
+            >Av.Marechal Castelo Branco, 08, Ilhotas, Teresina-PI</span
+          ></a
+        >
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="data-span">
+          <span class="text-white font-medium">Ter à Dom - 18:30 às 22:30</span>
+        </div>
+        <div class="bg-orange-600 px-4 py-2 rounded-lg mt-3" id="data-span">
+          <span class="text-white font-bold">Delivery e retirada</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- FIM HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+      Conheça nosso cardápio!
+    </h2>
+
+    <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <h2 class="text-2xl md:text-3xl font-bold">
+        Combo! <i class="fa-solid fa-fire" style="color: #f74002"></i>
+      </h2>
+    </div>
+
+    <!-- GRID PROMO -->
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 mx-auto max-w-7xl px-2 mb-16"
+    >
+      <!-- PROMO ITEM -->
+      <div class="flex gap-4 w-full">
+        <img
+          src="./assets/hamb-6.png"
+          alt="combo burger"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+        />
+        <div class="w-full">
+          <p class="font-bold">DUPLO CHEDDAR BACON + COCA-COLA 350ml</p>
+          <p class="text-sm">
+            Tá com fome? Pode pedir esse monstrão que resolve! Pão de batata, 2
+            carnes de 160g, muito queijo cheddar, fatias suculentas de bacon e
+            nosso molho especial. Esse com uma coquinha gelada vai bem demais!
+            Maravilhoso!
+          </p>
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 39,90</p>
+            <button
+              class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+              data-name="combo burger"
+              data-price="39.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PROMO ITEM -->
+    </div>
+
+    <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+      <h2 class="text-2xl md:text-3xl font-bold">Nossos burgers</h2>
+    </div>
+
+    <!-- CARDÁPIO -->
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-4">
+          <img
+            src="./assets/hamb-1.png"
+            alt="Classic Burger"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Classic Burger</p>
+            <p class="text-sm">
+              Delicioso burger de 160g de blend bovino no pão de batata, queijo
+              cheddar fatiado e nosso molho especial. É o simples bem feito,
+              pão, carne e queijo com muito sabor!
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 23,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Classic Burger"
+                data-price="23.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-4">
+          <img
+            src="./assets/hamb-2.png"
+            alt="Salada Burger"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Salada Burger</p>
+            <p class="text-sm">
+              Tudo na vida é equilíbrio né...que tal uma saladinha? Nosso salada
+              vai no pão de batata com blend bovino 160g, queijo prato fatiado,
+              alface, tomate, bacon fatiado porque ninguém é de ferro e para
+              finalizar uma maionese verde especial. Perfeição!
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 29,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Salada Burger"
+                data-price="29.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-4">
+          <img
+            src="./assets/hamb-3.png"
+            alt="Chama Bacon"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Chama Bacon</p>
+            <p class="text-sm">
+              Esse é especial para os bacon lovers! Pão de batata, blend bovino
+              160g, queijo cheddar fatiado, suculentas fatias de bacon e nosso
+              molho especial. Quem não ama cheddar com bacon? É bom demais!
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 27,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Chama Bacon"
+                data-price="27.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-4">
+          <img
+            src="./assets/hamb-4.png"
+            alt="Original Burger"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Original Burger</p>
+            <p class="text-sm">
+              Nosso Original é para quem ama um burger artesanal! Pão de batata,
+              blend bovino 160g, queijo prato fatiado, cebola caramelizada
+              deliciosa, bacon fatiado e maionese verde especial. É um clássico!
+              Perfeito!
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 32,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Original Burger"
+                data-price="32.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-4">
+          <img
+            src="./assets/hamb-5.png"
+            alt="Duplo Cheddar Bacon"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div>
+            <p class="font-bold">Duplo Cheddar Bacon</p>
+            <p class="text-sm">
+              Tá com fome? Pode pedir esse monstrão que resolve! Pão de batata,
+              2 carnes de 160g, muito queijo cheddar, fatias suculentas de bacon
+              e nosso molho especial. Esse com uma coquinha gelada vai bem
+              demais! Maravilhoso!
+            </p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 35,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Duplo Cheddar Bacon"
+                data-price="35.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2 mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">Bebidas</h2>
+      </div>
+
+      <!-- GRID BEBIDAS -->
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!-- BEBIDA ITEM -->
+        <div class="flex gap-4 w-full">
+          <img
+            src="./assets/refri-1.png"
+            alt="Coca-cola lata 350ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div class="w-full">
+            <p class="font-bold">
+              Coca-Cola Original
+              <i class="fa-solid fa-snowflake" style="color: #74c0fc"></i>
+            </p>
+            <p class="text-sm">Lata 350ml</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Cocacola"
+                data-price="6"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM -->
+
+        <!-- BEBIDA ITEM -->
+        <div class="flex gap-4 w-full">
+          <img
+            src="./assets/refri-2.png"
+            alt="Classic Burger"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300"
+          />
+          <div class="w-full">
+            <p class="font-bold">
+              Guaraná Antartica
+              <i class="fa-solid fa-snowflake" style="color: #74c0fc"></i>
+            </p>
+            <p class="text-sm">Lata 350ml</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hidden"
+                data-name="Guarana"
+                data-price="6"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM BEBIDA ITEM -->
+      </div>
+
+      <!-- FIM GRID BEBIDAS -->
+    </div>
+    <!-- FIM CARDÁPIO -->
+
+    <!-- BUTTON CART FOOTER-->
+
+    <footer
+      class="w-full bg-yellow-400 py-3 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <a
+        href="https://www.ifood.com.br/delivery/teresina-pi/chama-burger-ilhotas/2d3a5355-48ce-49b1-b148-33e909ad1b7c"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button
+          class="flex items-center gap-2 text-2xl md:text-3xl font-bold"
+          style="font-family: Bebas Neue"
+        >
+          Peça o seu aqui!
+          <i class="fa-solid fa-burger"></i>
+        </button>
+      </a>
+    </footer>
+    <!-- FIM BUTTON CART FOOTER-->
+  </body>
+</html>
