@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'home': "url('src/assets/bg-3.jpg')",
-        'smoke': "url('src/assets/gif-smoke.gif')",
+        home: "url('./assets/bg-3.jpg')",
+        smoke: "url('./assets/gif-smoke.gif')",
       },
     },
   },
