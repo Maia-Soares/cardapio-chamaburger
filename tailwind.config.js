@@ -6,7 +6,7 @@ module.exports = {
       backgroundImage: {
         'home': "url('./assets/bg-3.jpg')",
         'smoke': "url('./assets/gif-smoke.gif')",
-      }
+      },
     },
   },
   plugins: []
